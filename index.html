@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head> 
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact ">Contact</a></li>
+                    <i id="fas" class="material-icons" onclick="closemenu">&#xe5d2;</i>
+                    <!-- <i  id="fas" class="material-icons" onclick="closemenu">&#xe5cd;</i> -->
+                    
+                   <!-- for adding color style="font-size:48px;color:black" -->
+                </ul>
+                <i  id="fas" class="material-icons" onclick="openmenu">&#xe5cd;</i>
+                <!-- <i id="fas" class="material-icons" onclick="openemenu">&#xe5d2;</i> -->
+            </nav>
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hi, I'm  <span>Vaishnavi</span> Barmade<br> From Maharashtra </h1>
+            </div>
+        </div>
+     </div>
+    <!--------------ABOUT---------------------->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"> 
+                    <img src="images/coder.jpg">
+                </div>
+                <div class="about-col-2"> 
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Barmade Vaishnavi, and I graduated from the MBES Engineering Collage Ambajogai in 2024 with a degree in Computer Science. My interests are in Front End Engineering, and I love to create beautiful and performant products with delightful user experiences.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interface</li>
+                        <li><span>Web Development</span><br>Web app development</li>
+                        <li><span>App Development</span><br>Building Android/ios apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021-Current</span><br>UI/UX Design Training at ET Instutute</li>
+                        <li><span>2019-2021</span><br>Team lead at StarApp LLC.</li>
+                        <li><span>2017-2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                        <li><span>2016-2017</span><br>Internship at ekart eCommerce.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2016</span><br>UI/UX Design Training at ET Instutute</li>
+                        <li><span>2016</span><br>MBA from MIT Bangalore.</li>
+                        <li><span>2014</span><br>BBA from ISM Bangalore</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-----------------services---------------------> 
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i style='font-size:24px' class='fas'>&#xf121;</i>
+
+                    
+                    <h2>Web Design</h2>
+                    <p>Web design has numerous components that work together to create the finished experience
+                         of a website, including graphic design, user experience design, interface design, 
+                         search engine optimization (SEO) and content creation.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    
+                    <i style='font-size:24px' class='fas'>&#xf565;</i>
+
+                    <h2>UI/UX Design</h2>
+                    <p>Web design has numerous components that work together to create the finished experience 
+                        of a website, including graphic design, user experience design, interface design,
+                          search engine optimization (SEO) and content creation.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <!-- <i class="fa-brands fa-app-store"></i> -->
+                    <i style='font-size:24px' class='fab'>&#xf370;</i>
+
+                    <h2>App Design</h2>
+                    <p>Web design has numerous components that work together to create the finished experience
+                         of a website, including graphic design, user experience design, interface design,
+                          search engine optimization (SEO) and content creation.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                
+            </div>
+
+        </div>
+     </div>
+     <!------------------------portfolio--------------------------------->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <h3>Social Media app</h3>
+                        <p>The app connects you the translate people around the world.
+                            Download it from play store.</p>
+                            <a href="#"><i style='font-size:24px' class='fab'>&#xf082;</i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg">
+                    <div class="layer">
+                        <h3>Music app</h3>
+                         <p>The app connects you the translate people around the world.
+                            Download it from play store.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg">
+                    <div class="layer">
+                        <h3>online shopping</h3> app</h3>
+                        <p>The app connects you the translate people around the world.
+                            Download it from play store.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="# " class="btn">See More</a>
+
+        </div>
+     </div>
+     <!--------------------------contact ----------------------------->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>vaishnavibarmade15@gmail.com</p>
+                    <p><i style="font-size:24px" class="fa">&#xf098;</i></i> 9156115104</p>
+                <a href="images/cv1.pdf"   class="btn btn2"> CV</a>
+                    
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i style='font-size:24px' class='fab'>&#xf082;</i>
+                        </a>
+                           
+                        <a href=""><i style='font-size:24px' class='fab'>&#xf081;</i>
+                        </a>
+                        <a href=""><i style='font-size:24px' class='fab'>&#xf16d;</i>
+                        </a>
+                          <a href=""><i style='font-size:24px' class='fab'>&#xf08c;</i>
+                          </a>
+                    </div>
+
+                   
+                  </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet"> 
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email"required>
+                        <textarea name="Message"  rows="6" placeholder="your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @vaishnavi barmade.made<i class='fas fa-heart'></i></p>
+        </div>
+     </div>
+     <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+         function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+         } 
+   </script>
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxHwosg8jKUIa0Z2EmaoBoLxWo3TfNv3qvsUbbfhuLXMU8dzwy0NZyVX4GjskFtoTRe/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")   
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Messge sent sucessfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script>
+    var sidemeu=document.getElementById("sidemenu");
+    // document.getElementById("sidemenu").style.display = "none";
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+  </script>
+</body>
+</html>
